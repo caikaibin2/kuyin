@@ -1,0 +1,119 @@
+.shopbag{
+    height: 557px;
+    padding-bottom: 100px;
+   .shoplist{
+       padding-bottom: 100px;
+    .shop-box{
+        width: 90%;
+        height: 100px;
+        background-color: #eae8e8;
+        margin: 3px auto;
+         //    overflow: auto;
+         overflow: hidden;
+         border-radius: 10px;
+     .shop{
+            width: 410px;
+            height: 100px;
+           display: flex;
+         //   margin-left: 0px;
+           margin-left: -30px;
+         // margin-left: -70px;
+         transition: all 0.5s;
+        
+         .checkbox-box{
+             width: 24px;
+             margin: auto 0px ;
+             margin-left: 9px;
+             margin-right: 1px;
+         }
+         .img-box{
+             margin: auto 5px ;
+             margin-left: 10px;
+             img{
+                 width: 80px;
+             }
+         }
+         .name-number{
+             width: 400px;
+             height: 80px;
+             background-color: #eae8e8;
+             margin: auto 10px ;
+             margin-right: 0px;
+             .name{
+                 font-weight: bold;
+                 font-size: 14px;
+             }
+             .rule{
+                 color: silver;
+                 margin: 12px 0;
+             }
+             .price-number{
+                 &::after{
+                     content: "";
+                     display: block;
+                     clear: both;
+                 }
+                 .price{
+                     float: left;
+                     color: red;
+                     font-size: 14px;
+                     margin-top: -2px;
+                     font-weight: bold;
+                 }
+                 .number{
+                     float: right;
+                     margin-right: 10px;
+                     margin-top: -8px;
+                 }
+             }
+         }
+         .delete{
+             background-color: red;
+             width: 60px;
+             height: 100px;
+             line-height: 100px;
+             text-align: center;
+             margin: auto 0;
+             // margin-left: 5px;
+         }
+       }
+     .chmglo{
+         margin-left: 0px !important;
+     }
+     .chmglt{
+         margin-left: -70px !important;
+     }
+     }
+   }
+   .notshoplist{
+       .bottom-button{
+        width: 160px;
+        height: 40px;
+        background-color: #c0550d;
+       }
+   }
+   
+    /deep/ .van-checkbox__icon--round .van-icon{
+        border-color: #c0550d;
+    }
+    .van-submit-bar{
+        bottom: 50px;   
+    }
+    .checkbox{
+        // margin: auto 0;
+        margin-top: 37px;
+    }
+    .van-submit-bar__button{
+        margin-left: auto;
+    }
+    .van-tag--danger{
+        background-color: #c0550d;
+    }
+    .van-button--danger{
+        background-color: #c0550d;
+    }
+    .van-address-item .van-radio__icon--checked .van-icon{
+        background-color: #c0550d;
+        border-color: #c0550d;
+    }
+}

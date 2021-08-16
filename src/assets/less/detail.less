@@ -1,0 +1,131 @@
+.detail{
+    .img-box{
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        padding-bottom: 50px;
+        width: 90%;
+        position:relative;
+        margin: 0 auto;
+        top: -20px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: white;
+        .name-price{
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .name{
+                float: left;
+                margin: 10px 0 0 10px;
+                font-size: 18px;
+                font-weight: bold;
+                // color: #c0550d;
+            }
+            .price{
+                float: right;
+                margin: 10px 10px 0 0px;
+                font-size: 18px;
+                // color: #c0550d;
+            }
+        }
+        .temperature-box{
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            margin-top:20px ;
+            .text{
+                width: 50px;
+                height: 30px;
+                font-size: 18px;
+                border-radius: 15px;
+                line-height: 30px;
+                text-align: center;
+                float: left;
+            }
+            .temperature{
+                width: 90%;
+                float: left;
+                // margin-top: 10px;
+                .one{
+                    width: 50px;
+                    height: 30px;
+                    border-radius: 15px;
+                    line-height: 30px;
+                    text-align: center;
+                    border: 1px #c0550d solid;
+                    float: left;
+                    margin: 5px 0;
+                    margin-left: 20px;
+                    font-weight: bold;
+                    color: #c0550d;
+                }
+                .active{
+                    background-color: #c0550d;
+                    color: white !important;
+                }
+            }
+            
+        }
+        .number-price{
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            } 
+            .totalprice{
+                margin: 20px 0 10px 10px;
+                float: left;
+                color: #c0550d;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .number{
+                margin: 20px 10px 10px 0px;
+                float: right;
+            }
+        }
+        .line{
+            width: 100%;
+            height: 0;
+            margin: 10px 0;
+            border-top: 1px solid rgb(232,232,232);
+        }
+        .describe{
+            .text{
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .first{
+                margin-top: 10px;
+                color: silver;
+            }
+        }
+        
+    }
+    /deep/ .van-nav-bar .van-icon,
+    .van-nav-bar__text
+    {
+        color: #c0550d;
+    }
+    .van-nav-bar__title{
+        // color: #c0550d;
+        font-weight: bold;
+    }
+    .van-stepper--round .van-stepper__minus{
+        border: 1px solid #c0550d;
+        color: #c0550d;
+    }
+    .van-stepper--round .van-stepper__plus{
+        background-color: #c0550d;
+    }
+   
+}
+
+

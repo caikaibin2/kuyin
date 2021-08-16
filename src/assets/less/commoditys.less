@@ -1,0 +1,48 @@
+.commoditys{
+    width: 165px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 10px;
+   
+    .img-box{
+        img{
+            width: 165px;
+            border-radius: 10px;
+        }
+    }
+    .name{
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .price-box{
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .price{
+            float: left;
+            font-size: 16px;
+            color: #c0550d;
+        }
+        .shanchu{
+            float: right;
+            margin-right: 30px;
+            margin-top: -2px;
+        }
+
+    }
+    .hot{
+        width: 22px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        background-color: #c0550d ;
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+}

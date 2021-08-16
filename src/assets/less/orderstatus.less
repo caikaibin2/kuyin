@@ -1,0 +1,122 @@
+.orderstatus{
+   .content-box{
+    .content{
+        margin: 0 10px;
+        background-color: rgb(245,245,245);
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+       .order-status{
+           margin:15px 0;
+           font-size: 14px;
+           &::after{
+               content: "";
+               display: block;
+               clear: both;
+           }
+           .ordernumber{
+               float: left;
+           }
+           .status-delete{
+               float: right;
+               .status{
+                   margin-right: 20px;
+                   float: left;
+                   color: #c0550d;
+               }
+               .delete{
+                   float: right;
+               }
+           }
+       }
+       .commoditylist{
+           .commodity{
+               margin: 10px 0;
+             
+                &::after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .img-box{
+                    float: left;
+                    width: 90px;
+                    height: 90px;
+                    img{
+                        border-radius: 16px;
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+                .nama-number{
+                    float: left;
+                    margin-left: 10px;
+                    .name{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .guige{
+                        margin: 18px 0;
+                        color: silver;
+                    }
+                    .price-number{
+                        width: 200px;
+                        &::after{
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                        .price{
+                            float: left;
+                            color: #c0550d;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        .number{
+                            float: right;
+                            font-size: 14px;
+                        }
+                    }
+                }
+           }
+
+       }
+       .data{
+           margin: 10px 0;
+           font-size: 14px;
+           font-weight: bold;
+       }
+       .number-price{
+           width: 100%;
+           margin-bottom: 10px;
+           &::after{
+               content: "";
+               display: block;
+               clear: both;
+           }
+           .number{
+               float: left;
+               font-weight: bold;
+               font-size: 14px;
+           }
+           .totalprice{
+               float: right;
+               margin-right: 20px;
+               color: #c0550d;
+               font-size: 18px;
+               font-weight: bold;
+           }
+       }
+    }
+   } 
+    /deep/ .van-nav-bar__text{
+        color: #c0550d;
+    }
+    .van-nav-bar .van-icon{
+        color: #c0550d;
+    }
+    /deep/ .van-tab__pane, .van-tab__pane-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,58 @@
+.home{
+    .top{
+        .time{
+            color: silver;
+        }
+        .username{
+            margin-left: 15px;
+            font-weight: bold;
+            color:#c0550d;
+        }
+    }
+    .swipe{
+        .rectangle-box{
+            display: flex;
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            .rectangle{
+                width: 10px;
+                height: 4px;
+                background-color: white;
+                margin: 0 3px;
+                transition: all .4s;
+                background-color: silver;
+            }
+            .active{
+                background-color: #c0550d !important;
+                width: 15px;
+            }
+        }
+        
+    }
+    .hotsell{
+        margin-left: 20px;
+        color:#c0550d ;
+    }
+    .commodity{
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        .one:nth-of-type(2n-1){
+            margin: 0 15px;
+        }
+        .one:nth-of-type(2n){
+            margin-right:15px;
+        }
+    }
+
+    /deep/ .van-search{
+        padding: 0;
+    }
+    .van-nav-bar .van-icon{
+        color: rgb(44,44,44);
+    }
+    .van-nav-bar__right{
+        width: 200px;
+    }
+}

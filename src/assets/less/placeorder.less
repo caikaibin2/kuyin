@@ -1,0 +1,170 @@
+.placeorder{
+    width: 100vw;
+    height: 100vh;
+   
+    background-color: rgb(245,245,245);
+    .content{
+        padding-bottom: 40px;
+        .address{
+            width: 90%;
+            height: 120px;
+            margin:0 auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .first{
+                margin-left: 20px;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+            .second{
+                &::after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                font-size: 18px;
+                margin-left: 20px;
+                .name{
+                    float: left;
+                    font-weight: bold;
+                    color: #c0550d;
+                }
+                .phone{
+                    float: left;
+                    margin-left: 20px;
+                    color: silver;
+                    margin-top: 3px;
+                }
+            }
+            .third{
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 14px;
+                color: silver;
+            }
+        }
+        .commoditylist{
+            width: 90vw;
+            margin: 10px auto;
+            padding-top: 10px;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 10px;
+            .text{
+             margin-left: 10px;   
+             font-weight: bold;
+            }
+            .commoditycontent{
+                margin-left: 20px;
+               .one{
+                   &::after{
+                       content: "";
+                       display: block;
+                       clear: both;
+                    }
+                    margin: 10px 0;
+                  .img-box{
+                      float: left;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                  }
+                  .name-price-number{
+                    float: left;
+                    margin-left: 10px;
+                    .name{
+                        font-weight: bold;
+                    }
+                    .temperature{
+                        font-size: 14px;
+                        color: silver;
+                        margin: 10px 0;
+                    }
+                    .price-number{
+                        width: 200px;
+                        .price{
+                            float: left;
+                            color: #c0500d;
+                            font-weight: bold;
+                        }
+                        .number{
+                            float: right;
+                            margin-top: 3px;
+                            color: silver;
+                        }
+                    }
+                  }
+               }
+            }
+
+        }
+        // .line{
+        //     border-top: 1px dotted silver;
+        // }
+        .number-totalprice{
+            margin-top: 20px;
+            padding-bottom: 10px;
+            &::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .number{
+                float: left;
+                margin-left: 10px;
+            }
+            .totalprice{
+                float: right;
+                margin-right: 10px;
+                color: #c0550d;
+                font-weight: bold;
+            }
+        }
+    }
+    .bottom{
+        width: 90vw;
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 5vw;
+       
+    }
+    .address{
+        width: 100vw;
+        h2{
+            margin-top:15px  ;
+            margin-left: 133px;
+        }
+        .button-box{
+            width: 92vw;
+            height: 36px;
+            position: fixed;
+            bottom: 60px;
+            left: 4vw;
+            
+        }
+    }
+    /deep/ .van-nav-bar__text{
+        color: #c0550d;
+    }
+    .van-nav-bar .van-icon{
+        color: #c0550d;
+    }
+    .van-tag--danger{
+        background-color: #c0550d;
+    }
+    .van-button--danger{
+        background-color: #c0550d;
+    }
+    .van-address-item .van-radio__icon--checked .van-icon{
+        background-color: #c0550d;
+        border-color: #c0550d;
+    }
+    .van-radio-group{
+        padding-bottom: 20px;
+    }
+}
